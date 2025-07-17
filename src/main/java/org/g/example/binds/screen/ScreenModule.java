@@ -1,8 +1,6 @@
-package org.g.example.binds;
+package org.g.example.binds.screen;
 
 import com.google.inject.AbstractModule;
-import org.g.example.binds.screen.DesktopScreenBinds;
-import org.g.example.binds.screen.ViewportScreenBinds;
 
 public class ScreenModule extends AbstractModule {
 

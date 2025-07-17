@@ -1,14 +1,16 @@
 package org.g.example.driver.desktop;
 
 import com.codeborne.selenide.Configuration;
+import org.g.example.driver.BaseDriver;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class DesktopBaseDriver {
+public class DesktopBaseDriver extends BaseDriver {
 
+    @Override
     public void setupWebDriver() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--lang=en", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
