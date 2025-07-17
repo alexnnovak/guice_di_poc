@@ -16,7 +16,7 @@ public abstract class MainPage {
     SelenideElement closeCrossButton = $("[data-test='modal-close']");
 
     public MainPage openRegistrationPageByUrl(){
-        open("https://");
+        open("https://example");
         return this;
     }
 
