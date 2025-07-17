@@ -14,9 +14,10 @@ public abstract class MainPage {
     SelenideElement passwordInput = $("input[data-test='registration__input--password']");
     SelenideElement acceptTermsCheckbox = $("label[data-test='accept-terms'] span[class*='mr-2']");
     SelenideElement closeCrossButton = $("[data-test='modal-close']");
+    SelenideElement limitsButton = $("[data-test='profile-menu-item-limits']");
 
     public MainPage openRegistrationPageByUrl(){
-        open("https://example");
+        open("https://");
         return this;
     }
 
@@ -46,4 +47,9 @@ public abstract class MainPage {
     }
 
     public abstract MainPage clickProfileButton();
+
+    public MainPage clickLimitsButton(){
+        limitsButton.click();
+        return this;
+    }
 }

@@ -107,8 +107,6 @@
             </activation>
             <properties>
                 <type>chrome</type>
-                <!-- Set a default baseUrl for chrome tests -->
-                <baseUrl>https://example.com</baseUrl>
             </properties>
         </profile>
 
@@ -116,8 +114,6 @@
             <id>viewport</id>
             <properties>
                 <type>viewport</type>
-                <!-- Set a default baseUrl for viewport tests -->
-                <baseUrl>https://m.example.com</baseUrl>
             </properties>
         </profile>
     </profiles>

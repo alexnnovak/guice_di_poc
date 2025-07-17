@@ -14,11 +14,11 @@ public class ViewportBaseDriver extends BaseDriver {
         mobileEmulation.put("deviceName", "iPhone 15");
 
         Configuration.browser = "chrome";
+        Configuration.browserSize = "393x852";
         Configuration.timeout = 40000;
         Configuration.pageLoadTimeout = 40000;
         Configuration.pageLoadStrategy = "eager";
         Configuration.headless = false;
-        Configuration.browserSize = "393x852";
         Configuration.fastSetValue = true;
 
         Map<String, Object> prefs = new HashMap<>();

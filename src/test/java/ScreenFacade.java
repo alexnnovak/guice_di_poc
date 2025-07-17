@@ -15,7 +15,8 @@ public class ScreenFacade {
     Injector injector = Guice.createInjector(new ScreenModule());
     Injector injectedDriver = Guice.createInjector(new DriverModule());
 
+    protected BaseDriver baseDriver = injectedDriver.getInstance(BaseDriver.class);
+
     protected MainPage mainPage = injector.getInstance(MainPage.class);
 
-    protected BaseDriver baseDriver = injectedDriver.getInstance(BaseDriver.class);
 }

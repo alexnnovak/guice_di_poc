@@ -18,6 +18,7 @@ public class RegistrationTest extends BaseTest {
                 .clickCloseCrossButton()
                 .clickCloseCrossButton()
 
-                .clickProfileButton();
+                .clickProfileButton()
+                .clickLimitsButton();
     }
 }
